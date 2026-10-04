@@ -1,0 +1,130 @@
+/* ===== Cores e fontes (fáceis de editar) ===== */
+:root{
+  --cream:#fdf6f1; --paper:#fffdfb; --pink-l:#fbe6ea; --pink:#f3b9c5;
+  --red:#d9374b; --gold:#e8b94a; --ink:#5b3f45; --ink-soft:#8a6b72;
+  --script:"Snell Roundhand","Segoe Script","Bradley Hand","Brush Script MT",cursive;
+  --serif:Georgia,"Iowan Old Style","Palatino Linotype",serif;
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--cream);color:var(--ink);font-family:var(--serif);line-height:1.75;overflow-x:hidden;
+  padding-bottom:env(safe-area-inset-bottom)}
+body.locked{overflow:hidden;height:100%}
+img{display:block;width:100%;height:auto}
+[hidden]{display:none!important}
+
+/* ===== Tipografia ===== */
+.script{font-family:var(--script);font-weight:400;color:var(--red);text-align:center;line-height:1.2;
+  font-size:clamp(2rem,8vw,3.2rem);margin-bottom:.4em}
+.sub{font-style:italic;color:var(--ink-soft);font-size:1.1rem;margin:.3em 0 1.6em}
+.date{font-family:var(--script);color:var(--gold);font-size:1.5rem;text-align:center;margin-bottom:1rem}
+.quote{text-align:center;font-style:italic;color:var(--ink-soft);margin:0 auto 2rem;max-width:30ch}
+
+/* ===== Decorações ===== */
+.deco{position:absolute;width:var(--w);height:var(--w);pointer-events:none;z-index:3}
+.deco.heart{color:var(--pink)} .deco.heart.red{color:var(--red)}
+.deco.star{color:var(--gold)}
+.deco.kitty{height:auto;aspect-ratio:48/42}
+.sec{position:relative}
+
+/* ===== Polaroid / moldura ===== */
+.polaroid{position:relative;background:#fff;padding:9px 9px 26px;border-radius:3px;
+  box-shadow:0 6px 18px rgba(120,60,70,.18),0 1px 3px rgba(120,60,70,.12)}
+.polaroid::before{content:"";position:absolute;top:-10px;left:50%;width:62px;height:20px;margin-left:-31px;
+  background:rgba(243,185,197,.65);transform:rotate(-3deg);z-index:2}
+.tilt-l{transform:rotate(-2.2deg)} .tilt-r{transform:rotate(2deg)}
+.tilt-l.shown,.tilt-r.shown{transition:opacity .9s ease,translate .9s ease}
+
+/* ===== Abertura ===== */
+.intro{position:fixed;inset:0;z-index:50;background:radial-gradient(circle at 50% 30%,#fff 0,var(--pink-l) 100%);
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  padding:max(20px,env(safe-area-inset-top)) 20px max(20px,env(safe-area-inset-bottom));
+  transition:opacity 1.4s ease,visibility 1.4s}
+.intro.out{opacity:0;visibility:hidden}
+.intro-inner{width:100%;max-width:340px;max-height:100%}
+.polaroid.big{padding:10px 10px 30px;margin:0 auto 1.4rem}
+.polaroid.big img{max-height:46vh;object-fit:cover}
+.btn{font-family:var(--script);font-size:1.7rem;color:#fff;background:var(--red);border:0;border-radius:40px;
+  padding:.35em 2.2em;cursor:pointer;box-shadow:0 6px 16px rgba(217,55,75,.3);
+  transition:transform .3s;-webkit-tap-highlight-color:transparent}
+.btn:active{transform:scale(.96)}
+
+/* ===== Seções ===== */
+.sec{padding:4.5rem 20px;max-width:760px;margin:0 auto}
+.alt{max-width:none;background:linear-gradient(var(--pink-l),#fff3f5)}
+.alt>*{max-width:720px;margin-left:auto;margin-right:auto}
+.pair{display:grid;gap:1.6rem;margin:1.8rem auto;max-width:440px}
+.paper,.letter{position:relative;background:var(--paper);border-radius:6px;padding:1.6rem 1.4rem;
+  box-shadow:0 4px 14px rgba(120,60,70,.1);border:1px dashed var(--pink)}
+.text p+p{margin-top:1.1em}
+.letter{max-width:560px;margin:2.4rem auto 0;border-style:solid;border-color:#f3d9de}
+.sec .text{max-width:560px;margin-left:auto;margin-right:auto}
+.together .polaroid.wide{max-width:460px;margin:2rem auto 0}
+
+/* ===== Timeline ===== */
+.timeline{list-style:none;padding:0 0 0 30px;margin:2.4rem auto 0;max-width:520px;position:relative}
+.timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:0;border-left:2px dotted var(--pink)}
+.timeline li{position:relative;margin-bottom:2.6rem}
+.timeline li::before{content:"♥";position:absolute;left:-30px;top:2px;width:18px;text-align:center;
+  color:var(--red);font-size:1.05rem;background:var(--cream)}
+.timeline h3{font-family:var(--script);font-weight:400;color:var(--red);font-size:1.55rem;line-height:1.3;margin-bottom:.3rem}
+.timeline .polaroid{max-width:300px;margin:1rem 0 1.2rem}
+
+/* ===== Nossos momentos (5 fotos) ===== */
+.scrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:1.8rem 1.1rem;align-items:start;max-width:460px;margin:0 auto}
+.s1{grid-column:1/3;width:84%;justify-self:start}
+.s2{margin-top:-.4rem}
+.s3{margin-top:1.8rem}
+.s4{grid-column:1/3;width:80%;justify-self:end}
+.s5{grid-column:1/3;width:70%;justify-self:center}
+
+/* ===== Você ===== */
+.you-photos{display:grid;gap:2rem;max-width:420px;margin:2rem auto 0}
+.you-photos .polaroid:nth-child(2){width:88%;justify-self:end}
+.you-photos .polaroid:nth-child(3){width:94%}
+
+/* ===== Personagens ===== */
+.chars{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:1.6rem 1.1rem;max-width:460px;margin:2rem auto 0;align-items:start}
+.chars .polaroid:nth-child(even){margin-top:1.6rem}
+
+/* ===== Álbum ===== */
+.album{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:1.6rem .8rem;align-items:start;max-width:520px;margin:0 auto}
+.album .polaroid{grid-column:span 3}
+.a1,.a5,.a9{grid-column:1/-1!important;width:88%}
+.a1{justify-self:start} .a5{justify-self:end} .a9{justify-self:center}
+.a3{margin-top:1rem} .a7{margin-top:.6rem} .a11{margin-top:1.2rem}
+.album .polaroid{padding:7px 7px 20px}
+
+/* ===== Encerramento ===== */
+.end{padding:9rem 24px 11rem;text-align:center;max-width:560px;margin:0 auto}
+.end .text{margin:2.4rem auto 3.4rem;text-align:center}
+.names{font-size:clamp(2.4rem,10vw,3.6rem);margin-bottom:.2em}
+
+/* ===== Botão de música ===== */
+.music{position:fixed;right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));z-index:40;
+  width:42px;height:42px;border-radius:50%;border:1px solid var(--pink);background:rgba(255,253,251,.88);
+  color:var(--red);display:grid;place-items:center;box-shadow:0 3px 10px rgba(120,60,70,.18);cursor:pointer;
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.music svg{width:18px;height:18px}
+.music .ic-play{display:none} .music.paused .ic-play{display:block} .music.paused .ic-pause{display:none}
+
+/* ===== Animações suaves ===== */
+[data-r]{opacity:0;translate:0 22px;transition:opacity 1s ease,translate 1s ease}
+[data-r].shown{opacity:1;translate:0 0}
+@media (prefers-reduced-motion:reduce){[data-r]{opacity:1;translate:none;transition:none}.intro{transition:none}}
+
+/* ===== Desktop ===== */
+@media (min-width:760px){
+  .sec{padding:6rem 32px}
+  .pair{grid-template-columns:1fr 1fr;max-width:640px}
+  .big-pair{max-width:700px}
+  .you-photos{grid-template-columns:repeat(3,1fr);max-width:720px;align-items:start}
+  .you-photos .polaroid{width:100%!important}
+  .you-photos .polaroid:nth-child(2){margin-top:2rem}
+  .scrap{max-width:640px}
+  .chars{grid-template-columns:repeat(4,1fr);max-width:720px}
+  .album{max-width:820px;gap:2rem 1.2rem}
+  .album .polaroid{grid-column:span 2}
+  .a1,.a5,.a9{grid-column:span 4!important;width:100%}
+  .intro-inner{max-width:400px}
+}
