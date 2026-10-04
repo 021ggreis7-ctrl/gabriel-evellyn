@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fdf6f1">
+<title>Gabriel &amp; Evellyn</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+
+<!-- Decorações reutilizáveis (desenhadas em SVG, sem imagens externas) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="heart" viewBox="0 0 24 22"><path d="M12 21C5 15 1 11.500 1 7a5.500 5.500 0 0 1 11-1.500A5.500 5.500 0 0 1 23 7c0 4.500-4 8-11 14z" fill="currentColor"/></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path d="M12 2l2.900 6.300 6.900.8-5.100 4.700 1.400 6.800L12 17.100 5.900 20.600l1.400-6.800L2.200 9.100l6.900-.8z" fill="currentColor"/></symbol>
+  <symbol id="bolt" viewBox="0 0 24 24"><path d="M14 1L4 14h6l-2 9 11-14h-6z" fill="currentColor"/></symbol>
+  <symbol id="kitty" viewBox="0 0 48 42">
+    <path d="M7 20L6 3l13 7zM41 20l1-17-13 7z" fill="#fff" stroke="#6b4a50" stroke-width="2" stroke-linejoin="round"/>
+    <ellipse cx="24" cy="25" rx="19" ry="14" fill="#fff" stroke="#6b4a50" stroke-width="2"/>
+    <circle cx="15" cy="25" r="1.800" fill="#6b4a50"/><circle cx="33" cy="25" r="1.800" fill="#6b4a50"/>
+    <ellipse cx="24" cy="29" rx="2.500" ry="1.800" fill="#f4c542"/>
+    <path d="M3 24l8 2M3 30l8-2M45 24l-8 2M45 30l-8-2" stroke="#6b4a50" stroke-width="1.300" stroke-linecap="round"/>
+    <path d="M33 11l5-4 1 9zM33 11l-3-4-2 8z" fill="#e0405a" stroke="#b02a42" stroke-width="1.200" stroke-linejoin="round"/>
+    <circle cx="33" cy="11" r="2.200" fill="#f4c542"/>
+  </symbol>
+  <symbol id="mcq" viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#d9374b"/><path d="M23 4L10 22h8l-2 14 14-20h-8z" fill="#f4c542"/></symbol>
+</svg>
+
+<!-- ABERTURA -->
+<section id="intro" class="intro">
+  <div class="intro-inner">
+    <div class="polaroid big tilt-l"><img src="IMG_2436.jpeg" alt="Gabriel e Evellyn"><svg class="deco kitty" style="--w:54px;top:-26px;right:-14px"><use href="#kitty"/></svg></div>
+    <h1 class="script">Gabriel &amp; Evellyn</h1>
+    <p class="sub">Você é o amor da minha vida</p>
+    <button id="enter" class="btn" type="button">Entrar</button>
+  </div>
+  <svg class="deco heart" style="--w:22px;top:9%;left:10%"><use href="#heart"/></svg>
+  <svg class="deco star" style="--w:18px;top:14%;right:12%"><use href="#star"/></svg>
+  <svg class="deco heart" style="--w:16px;bottom:12%;right:14%"><use href="#heart"/></svg>
+</section>
+
+<main id="site" hidden>
+
+<!-- 1 -->
+<section class="sec">
+  <h2 class="script">Onde tudo começou</h2>
+  <p class="date">08 de abril</p>
+  <div class="pair">
+    <figure class="polaroid tilt-l" data-r><img src="IMG_2438.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid tilt-r" data-r><img src="IMG_2439.jpeg" alt="" loading="lazy"></figure>
+  </div>
+  <div class="text paper" data-r>
+    <p>Eu nem imaginava que uma simples carona naquele dia ia acabar trazendo você de volta pra minha vida. A partir dali, a gente começou a conversar de novo, aos poucos, sem saber exatamente onde aquilo ia chegar.</p>
+    <p>E eu já estava todo bobinho por você, meu amor. 🩷</p>
+    <svg class="deco mcq" style="--w:34px;top:-14px;left:-8px"><use href="#mcq"/></svg>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="sec alt">
+  <h2 class="script">Aqueles pequenos momentos</h2>
+  <div class="pair big-pair">
+    <figure class="polaroid tilt-r" data-r><img src="IMG_2441.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid tilt-l" data-r><img src="IMG_2442.jpeg" alt="" loading="lazy"></figure>
+  </div>
+  <div class="text paper" data-r>
+    <p>Depois daquele reencontro, vieram aqueles pequenos momentos que, na época, pareciam simples… mas que hoje significam muito pra mim.</p>
+    <p>A gente foi se aproximando, conversando cada vez mais e criando, aos poucos, uma história só nossa, meu amorzinho. 🩷</p>
+    <svg class="deco kitty" style="--w:44px;bottom:-22px;right:-6px"><use href="#kitty"/></svg>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="sec">
+  <h2 class="script">Nossa história 🩷</h2>
+  <ol class="timeline">
+    <li data-r><h3>08/04 — O reencontro</h3><p>Depois de tanto tempo, a gente voltou a se falar. E eu nem imaginava o quanto aquele dia ia mudar tudo.</p></li>
+    <li data-r><h3>Os primeiros dias</h3><p>A gente começou a conversar cada vez mais. Era tudo tão simples, mas eu já ficava todo bobo quando falava com você.</p></li>
+    <li data-r><h3>Aos poucos...</h3><p>Sem perceber, fomos ficando cada vez mais próximos. Cada conversa, cada encontro e cada momento fazia eu gostar ainda mais de você.</p></li>
+    <li data-r><h3>Nosso primeiro abraço 🩷</h3><p>Quando a gente se abraçou de verdade pela primeira vez, foi um daqueles momentos que eu nunca vou esquecer.</p></li>
+    <li data-r><h3>Quando já estávamos mais próximos</h3>
+      <figure class="polaroid tilt-r"><img src="IMG_2443.jpeg" alt="" loading="lazy"></figure>
+      <p>A essa altura, já tinha alguma coisa diferente entre a gente. A gente já estava muito mais próximo… e eu estava cada vez mais apaixonado por você.</p></li>
+    <li data-r><h3>30/04 — O nosso primeiro beijo ❤️</h3>
+      <figure class="polaroid tilt-l"><img src="IMG_2444.jpeg" alt="" loading="lazy"></figure>
+      <p>No seu aniversário, naquele estacionamento, aconteceu o nosso primeiro beijo.</p>
+      <p>E aquele momento virou uma das lembranças mais especiais da minha vida.</p></li>
+  </ol>
+</section>
+
+<!-- 4 -->
+<section class="sec together">
+  <h2 class="script">Aqui já estávamos oficialmente juntos ❤️</h2>
+  <figure class="polaroid wide" data-r><img src="IMG_2445.jpeg" alt="" loading="lazy">
+    <svg class="deco heart red" style="--w:26px;top:-12px;left:-10px"><use href="#heart"/></svg></figure>
+  <div class="text letter" data-r>
+    <p>Depois de tudo que aconteceu, finalmente estávamos juntos.</p>
+    <p>E foi nessa fase que eu comecei a conhecer você de verdade. Cada conversa, cada momento e cada coisa nova que eu descobria sobre você só fazia eu ter mais certeza do quanto você é incrível.</p>
+    <p>Eu tive a sorte de conhecer não só a menina por quem eu já era apaixonado, mas também a mulher maravilhosa que você é.</p>
+    <p>E quanto mais eu te conhecia, mais eu tinha certeza de que era você. 🩷</p>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="sec">
+  <h2 class="script">Nossos momentos 🩷</h2>
+  <p class="quote" data-r>Alguns momentos passam rápido…<br>mas ficam guardados pra sempre. 🩷</p>
+  <div class="scrap">
+    <figure class="polaroid s1 tilt-l" data-r><img src="IMG_2446.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid s2 tilt-r" data-r><img src="IMG_2449.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid s3 tilt-r" data-r><img src="IMG_2451.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid s4 tilt-l" data-r><img src="IMG_2452.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid s5 tilt-r" data-r><img src="IMG_2453.jpeg" alt="" loading="lazy"></figure>
+    <svg class="deco star" style="--w:20px;top:30%;left:46%"><use href="#star"/></svg>
+    <svg class="deco heart" style="--w:18px;top:62%;left:4%"><use href="#heart"/></svg>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="sec alt you">
+  <h2 class="script">Você 🩷</h2>
+  <div class="you-photos">
+    <figure class="polaroid tilt-l" data-r><img src="IMG_2454.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid tilt-r" data-r><img src="IMG_2455.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid tilt-l" data-r><img src="IMG_2456.jpeg" alt="" loading="lazy"></figure>
+  </div>
+  <div class="text letter" data-r>
+    <p>Eu admiro o seu jeito, o seu sorriso, a sua personalidade e a forma como você consegue deixar tudo mais especial só sendo você.</p>
+    <p>Você é linda por fora, mas o que mais me encanta é a pessoa incrível que você é por dentro. Eu admiro a mulher maravilhosa que tenho ao meu lado.</p>
+    <p>Você é incrível, meu amor. Eu passaria horas admirando sua beleza encantadora. Você é surreal de linda, minha gatinha… e o melhor: todinha minha. 🩷</p>
+  </div>
+</section>
+
+<!-- 7 -->
+<section class="sec">
+  <h2 class="script">Nossos personagens 🩷</h2>
+  <div class="chars">
+    <figure class="polaroid tilt-l" data-r><img src="IMG_2474.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid tilt-r" data-r><img src="IMG_2475.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid tilt-r" data-r><img src="IMG_2476.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid tilt-l" data-r><img src="IMG_2479.jpeg" alt="" loading="lazy"></figure>
+    <svg class="deco kitty" style="--w:46px;top:-20px;right:6%"><use href="#kitty"/></svg>
+    <svg class="deco mcq" style="--w:36px;bottom:-14px;left:6%"><use href="#mcq"/></svg>
+  </div>
+</section>
+
+<!-- 8 -->
+<section class="sec alt">
+  <h2 class="script">Nosso álbum</h2>
+  <p class="quote" data-r>Um pouquinho da nossa história em fotos. 🩷</p>
+  <div class="album">
+    <figure class="polaroid a1 tilt-l" data-r><img src="IMG_2462.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid a2 tilt-r" data-r><img src="IMG_2463.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid a3 tilt-l" data-r><img src="IMG_2464.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid a4 tilt-r" data-r><img src="IMG_2465.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid a5 tilt-r" data-r><img src="IMG_2466.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid a6 tilt-l" data-r><img src="IMG_2467.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid a7 tilt-l" data-r><img src="IMG_2468.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid a8 tilt-r" data-r><img src="IMG_2469.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid a9 tilt-r" data-r><img src="IMG_2470.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid a10 tilt-l" data-r><img src="IMG_2471.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid a11 tilt-l" data-r><img src="IMG_2472.jpeg" alt="" loading="lazy"></figure>
+    <figure class="polaroid a12 tilt-r" data-r><img src="IMG_2473.jpeg" alt="" loading="lazy"></figure>
+    <svg class="deco heart" style="--w:20px;top:18%;right:4%"><use href="#heart"/></svg>
+    <svg class="deco star" style="--w:18px;top:52%;left:3%"><use href="#star"/></svg>
+    <svg class="deco kitty" style="--w:40px;bottom:6%;right:4%"><use href="#kitty"/></svg>
+  </div>
+</section>
+
+<!-- ENCERRAMENTO -->
+<section class="end">
+  <h2 class="script" data-r>Para sempre, nós. ❤️</h2>
+  <div class="text" data-r>
+    <p>Obrigado por fazer parte da minha vida e por transformar tantos momentos simples em lembranças que eu vou guardar pra sempre.</p>
+    <p>Eu te amo, meu amor. 🩷</p>
+  </div>
+  <p class="script names" data-r>Gabriel &amp; Evellyn</p>
+  <p class="date" data-r>08/04 — e tudo que ainda está por vir. ❤️</p>
+</section>
+</main>
+
+<button id="music" class="music" type="button" aria-label="Pausar música" hidden>
+  <svg class="ic-pause" viewBox="0 0 24 24"><path d="M7 5h3v14H7zM14 5h3v14h-3z" fill="currentColor"/></svg>
+  <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z" fill="currentColor"/></svg>
+</button>
+<audio id="bgm" src="atlasaudio-love-piano-520077.mp3" loop preload="auto" playsinline></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
